@@ -7,4 +7,3 @@
 	- [Controllers](developer/controllers.md)
 	- [Actions](developer/actions.md)
 	- [Request validators](developer/validators.md)
-	- [Authorizers](developer/validators.md)
