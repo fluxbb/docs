@@ -10,7 +10,7 @@ Actions borrow concepts both from controllers in classical MVC architectures and
 
 To create an action, we need a subclass of `FluxBB\Core\Action`. As the base class is abstract, we must override the `run()` method - the right place to implement custom logic for our action:
 
-```
+```php
 <?php namespace FluxBB\Actions;
 
 use FluxBB\Core\Action;
