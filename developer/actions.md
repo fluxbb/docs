@@ -24,4 +24,4 @@ class GetBooks extends Action
 }
 ```
 
-The `run()` method should do three things: Handle user input, pass it to the domain layer and return a response.
+The `run()` method should do three things: Handle user input, pass it to the domain layer and return response data.
