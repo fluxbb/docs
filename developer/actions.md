@@ -25,3 +25,30 @@ class GetBooks extends Action
 ```
 
 The `run()` method should do three things: Handle user input, pass it to the domain layer and return response data.
+
+## Handling input
+
+```php
+$id = $this->get('id');
+$sortBy = $this->get('sort_order', 'asc');
+```
+
+The `get()` method gives the developer access to any parameters passed to the action. It accepts two parameters: first, the key of the parameter to retrieve. The second, optional parameter allows for defining a default value.
+
+## Raising events
+
+After successful execution, actions should raise events, so that other parts of the system or extensions can be notified of what happened. This can be done using the convenient `raise()` method:
+
+```php
+$this->raise(new UserCreated($user));
+```
+
+## Returning data
+
+To make results available to the caller, an associative array can be returned. For example, to return a newly created post instance:
+
+```php
+return [
+    'post' => $post,
+];
+```
