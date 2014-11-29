@@ -1,6 +1,5 @@
 - Documentation
 	- [Introduction](introduction.md)
-	- [Getting Started](start.md)
 	- [Installation](installation.md)
 - For developers
 	- [Routing](developer/routing.md)
