@@ -1,6 +1,6 @@
 # Request validators
 
-By registering validators, we can validate input that is passed to [actions](developer/actions.md).
+By registering validators, we can validate input that is passed to [actions](actions.md).
 
 ## Creating validators
 
