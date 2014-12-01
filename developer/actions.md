@@ -2,7 +2,7 @@
 
 Actions play a central role in FluxBB. They describe the use cases that FluxBB enables and are executed by the server.
 
-When executed, actions have access to input parameters, and are expected to either throw an exception that inherits from `FluxBB\Server\Exception\Exception` or return an associative array of values. They are supposed to orchestrate FluxBB's core services to retrieve or manipulate data, and can also **raise events**.
+When executed, actions have access to **input parameters**, and are expected to either throw an exception that inherits from `FluxBB\Server\Exception\Exception` or **return** an associative array of values. They are supposed to orchestrate FluxBB's core services to retrieve or manipulate data, and can also **raise events**.
 
 Actions borrow concepts both from controllers in classical MVC architectures and from command handlers in Domain-Driven Design (DDD).
 
