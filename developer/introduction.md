@@ -14,8 +14,8 @@ The new core is strictly object-oriented and strives to be well architected and 
 
 ## Writing extensions
 
-TODO
+*Look forward to Alpha4!*
 
 ## Integrating FluxBB with other components
 
-TODO
+*Wait for the Beta!*
