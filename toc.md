@@ -1,7 +1,7 @@
 - Documentation
 	- [Introduction](introduction.md)
 	- [Installation](installation.md)
-- For developers
+- [For developers](developer/introduction.md)
 	- [Routing](developer/routing.md)
 	- [Controllers](developer/controllers.md)
 	- [Actions](developer/actions.md)
