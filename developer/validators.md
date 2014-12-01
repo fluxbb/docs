@@ -37,8 +37,13 @@ Just pass it an array, and it will validate it and throw an exception if the val
 
 ## Registering validators
 
-TODO
+Validators are small, reusable classes.
+As such, they need to be registered with the request validator, which is implemented in `FluxBB\Server\RequestValidator`.
+This class wraps the FluxBB server instance and, before passing on requests to their corresponding actions, makes sure they are valid.
 
-## Validation rules
+Validators are registered in the server's service provider, `FluxBB\Server\ServiceProvider`.
+In the `registerValidators()` method, validator classes are registered to be run before certain actions:
 
-TODO
+```php
+$validator->registerValidator('edit.post', 'FluxBB\Validation\PostValidator');
+```
